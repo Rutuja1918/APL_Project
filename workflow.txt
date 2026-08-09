@@ -1,0 +1,102 @@
+2️⃣ What EXACTLY comes under each notebook?
+This is important. Don’t mix things.
+
+📘 01_data_cleaning.ipynb
+
+Purpose: Make raw data usable and trustworthy.
+What you MUST do here:
+Load dataset (using relative path)
+Remove garbage rows (Ticker, NaN rows)
+Drop useless columns (level_0, index)
+Rename columns properly
+Convert Date to datetime
+Set Date as index
+Check missing values
+Save cleaned data (optional but good)
+What NOT to do here:
+❌ Plotting
+❌ Forecasting
+❌ Interpretation
+This notebook is purely data preparation.
+
+📘 02_eda.ipynb
+Purpose: Understand the data behavior visually.
+What you MUST do:
+Summary statistics (describe)
+Line plot of Close price vs Date
+Histogram of Close price
+Box plot of Close price
+Volume trend over time
+Questions you answer:
+How does price behave over time?
+Is data skewed?
+Any extreme values?
+What NOT to do:
+
+❌ Model training
+❌ Forecasting
+EDA ≠ prediction.
+
+📘 03_stability_volatility.ipynb
+Purpose: Show analytical thinkig (important).
+What you MUST do:
+Calculate daily returns
+Rolling mean (20/30 days)
+Rolling standard deviation (volatility)
+Identify stable vs unstable periods
+Plots:
+Rolling volatility over time
+Close price + rolling mean
+Interpretation:
+When is the market stable?
+When does volatility spike?
+This notebook gives depth to your project.
+
+📘 04_forecasting.ipynb
+Purpose: Predict future trend (simple, honest).
+What you MUST do:
+Split data (train/test or time-based)
+Use ONE simple method:
+Moving Average OR
+Linear Regression
+Forecast short horizon (20–30 days)
+Plot actual vs predicted
+MUST include:
+Limitations section
+No fake accuracy claims
+Simple model + clear explanation > fancy ML.
+
+3️⃣ Should you do MORE than this?
+Only if:
+Instructor explicitly asks for it
+OR you finish early and want polish
+Optional add-ons (NOT required):
+Correlation heatmap
+Monthly / yearly aggregation
+Basic financial indicators (RSI, SMA)
+These are optional polish, not core.
+4️⃣ What NOT to add (this will hurt you)
+
+❌ Deep learning
+❌ 5 forecasting models comparison
+❌ Accuracy obsession
+❌ Buzzwords without explanation
+
+Professors prefer clarity, not complexity.
+
+5️⃣ Final judgment (listen carefully)
+
+If you do:
+
+All 4 notebooks
+
+Clean code
+
+Clear plots
+
+Honest interpretation
+
+👉 Your project is COMPLETE and STRONG.
+
+Do NOT keep adding things just to “look advanced”.
+That usually backfires.
